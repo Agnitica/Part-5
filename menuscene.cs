@@ -8,7 +8,7 @@ public class menuscene : MonoBehaviour {
 
 	// Use this for initialization
 
-	public Scoremanager sc=Scoremanager.Instance;
+	
 
 
 
