@@ -12,18 +12,13 @@ public class Scoreboard : MonoBehaviour {
 	private Vector3 prevpos;
 	public Text Score;
 	private int dis=0;
-	//private static Scoreboard instance;
-	public Scoremanager sc;
+	
 
 	// Use this for initialization
 
-
-
-
-
 	void Start () {
 		prevpos = player.transform.position;
-		sc = GameObject.FindObjectOfType<Scoremanager> ();
+		
 
 	}
 	
@@ -34,9 +29,8 @@ public class Scoreboard : MonoBehaviour {
 		if(player!=null)
 		{
 			dis=(int)Math.Ceiling(dis+player.transform.position.x - prevpos.x);
-	    	Score.text = "Score: " + dis;
-			sc.Score=dis;
-		
+	    	      Score.text = "Score: " + dis;
+			
 			prevpos = player.transform.position;
 		
 		
